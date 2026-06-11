@@ -4,6 +4,25 @@ Portfolio-ready SAP Fiori Elements application built with SAP Cloud Application 
 
 The demo scenario is an **Innovation Portfolio Studio** for SAP consulting teams. It helps showcase how a business team can track strategic initiatives, client context, delivery milestones, risks, expected value, AI readiness and sustainability impact from one Fiori workspace.
 
+## Projektbeschreibung auf Deutsch
+
+**Innovation Portfolio Studio** ist eine portfolio-taugliche SAP-Fiori-Elements-Anwendung auf Basis von SAP CAP, OData V4 und draft-fähigen Object Pages.
+
+Die Anwendung zeigt, wie Beratungsteams strategische Innovationsinitiativen strukturiert verwalten können: Kundenkontext, verantwortliche Consultants, Status, Priorität, Budget, erwarteter Geschäftswert, Meilensteine, Risiken, KI-Reifegrad und Nachhaltigkeitswirkung werden in einer modernen Fiori-Oberfläche zusammengeführt.
+
+Das Demo-Szenario eignet sich besonders für ein Bewerbungs- oder Projektportfolio, weil es typische SAP-Kompetenzen sichtbar macht:
+
+- Modellierung von Geschäftsobjekten mit SAP CAP und CDS
+- Bereitstellung eines OData-V4-Services
+- Fiori Elements List Report und Object Page
+- Draft Handling für professionelle Bearbeitungsprozesse
+- UI-Annotationen für Filter, Facets, Fortschritt, Kritikalität und Kennzahlen
+- realistische Demo-Daten für eine sofort präsentierbare Anwendung
+
+Kurzbeschreibung für Lebenslauf oder LinkedIn:
+
+> Entwicklung einer SAP-Fiori-Elements-Demoanwendung mit SAP CAP und OData V4 zur Verwaltung eines Innovationsportfolios. Die Lösung umfasst draft-fähige Geschäftsobjekte, semantische UI-Annotationen, Meilenstein- und Risikomanagement sowie realistische Demo-Daten für Portfolio-Präsentationen.
+
 ## What this project demonstrates
 
 - SAP CAP domain modeling with compositions, associations and managed data
@@ -76,6 +95,16 @@ Useful service endpoints:
 - OData service: `http://localhost:4004/odata/v4/portfolio/`
 - Metadata: `http://localhost:4004/odata/v4/portfolio/$metadata`
 - Portfolio items: `http://localhost:4004/odata/v4/portfolio/PortfolioItems`
+
+## Public portfolio link
+
+The BAS preview URL is not intended to be a permanent public portfolio link. For employers, use one of these options:
+
+1. **SAP BTP Free Tier / Cloud Foundry** - best SAP-aligned option for a live CAP + Fiori demo.
+2. **A public Node.js host** such as Render, Railway or Fly.io - practical option for a simple public demo of the CAP app.
+3. **GitHub repository + screenshots/video** - most stable fallback if the live runtime is not required.
+
+For a professional portfolio, combine a live demo link with the GitHub repository and a short screen recording.
 
 ## Development commands
 
