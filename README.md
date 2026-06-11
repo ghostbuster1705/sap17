@@ -174,6 +174,14 @@ https://innovation-portfolio-studio-sap17.cfapps.eu10.hana.ondemand.com
 
 Open that URL in a browser and choose **Innovation Portfolio Studio** from the CAP welcome page.
 
+The standalone Fiori Elements entrypoint is:
+
+```text
+https://innovation-portfolio-studio-sap17.cfapps.us10-001.hana.ondemand.com/portfolio/webapp/index.html
+```
+
+The root URL, `/app`, `/portfolio` and `/debug` redirect to that entrypoint for a smoother portfolio demo.
+
 ### Troubleshooting a crashed app
 
 If `cf push` ends with `Start unsuccessful`, check the app logs:
