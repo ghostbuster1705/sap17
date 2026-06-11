@@ -6,10 +6,15 @@
     <title>Innovation Portfolio Studio</title>
     <style>
       html,
-      body,
-      #content {
+      body {
         height: 100%;
         margin: 0;
+      }
+
+      #content {
+        height: 100vh;
+        min-height: 100vh;
+        overflow: hidden;
       }
 
       #content > .sapUiComponentContainer,
@@ -18,7 +23,8 @@
       #content .sapUiView,
       #content .sapMNav,
       #content .sapMNavItem {
-        height: 100%;
+        height: 100vh !important;
+        min-height: 100vh !important;
       }
 
       #content .sapFDynamicPage {
@@ -36,13 +42,15 @@
       data-sap-ui-frameOptions="trusted">
     </script>
   </head>
-  <body class="sapUiBody sapUiSizeCompact" id="content">
-    <div
-      data-sap-ui-component
-      data-name="innovation.portfolio.app"
-      data-id="innovation-portfolio"
-      data-height="100%"
-      data-settings='{"id": "innovation.portfolio.app"}'>
+  <body class="sapUiBody sapUiSizeCompact">
+    <div id="content">
+      <div
+        data-sap-ui-component
+        data-name="innovation.portfolio.app"
+        data-id="innovation-portfolio"
+        data-height="100%"
+        data-settings='{"id": "innovation.portfolio.app"}'>
+      </div>
     </div>
   </body>
 </html>
