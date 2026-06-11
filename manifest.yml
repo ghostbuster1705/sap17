@@ -1,0 +1,10 @@
+applications:
+  - name: innovation-portfolio-studio-sap17
+    memory: 512M
+    disk_quota: 1G
+    buildpacks:
+      - nodejs_buildpack
+    command: npm run cf:start
+    env:
+      NODE_ENV: production
+      CDS_ENV: production

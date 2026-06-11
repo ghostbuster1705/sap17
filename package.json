@@ -6,6 +6,8 @@
   "scripts": {
     "start": "cds-serve",
     "watch": "cds watch",
+    "deploy:sqlite": "cds deploy --to sqlite",
+    "cf:start": "npm run deploy:sqlite && npm start",
     "build": "cds build",
     "compile": "cds compile srv --to edmx",
     "test": "npm run compile"
@@ -28,12 +30,10 @@
   },
   "homepage": "https://github.com/ghostbuster1705/sap17#readme",
   "dependencies": {
-    "@sap/cds": "^9.9.1",
-    "express": "^5.2.1"
-  },
-  "devDependencies": {
     "@cap-js/sqlite": "^2.4.0",
-    "@sap/cds-dk": "^9.9.2"
+    "@sap/cds": "^9.9.1",
+    "@sap/cds-dk": "^9.9.2",
+    "express": "^5.2.1"
   },
   "cds": {
     "requires": {

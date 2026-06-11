@@ -106,6 +106,94 @@ The BAS preview URL is not intended to be a permanent public portfolio link. For
 
 For a professional portfolio, combine a live demo link with the GitHub repository and a short screen recording.
 
+## Deploy to SAP BTP Cloud Foundry
+
+This repository contains a simple `manifest.yml` for a portfolio demo deployment with `cf push`.
+
+> Note: this demo uses SQLite and recreates demo data on app start. That is fine for a portfolio showcase. For production, replace SQLite with SAP HANA Cloud.
+
+### 1. Login to Cloud Foundry
+
+In SAP Business Application Studio, open a terminal and login to the Cloud Foundry endpoint of your SAP BTP subaccount:
+
+```bash
+cf login -a https://api.cf.us10-001.hana.ondemand.com
+```
+
+If your subaccount is in Europe, the endpoint is often:
+
+```bash
+cf login -a https://api.cf.eu10.hana.ondemand.com
+```
+
+After login, choose your org and space when prompted. You can verify the target with:
+
+```bash
+cf target
+```
+
+### 2. Deploy the app
+
+From the project root:
+
+```bash
+npm install
+cf push
+```
+
+Cloud Foundry reads `manifest.yml`, installs dependencies and runs:
+
+```bash
+npm run cf:start
+```
+
+That command deploys the CSV demo data to SQLite and starts the CAP server.
+
+### 3. Get the public URL
+
+After deployment:
+
+```bash
+cf apps
+cf app innovation-portfolio-studio-sap17
+```
+
+The app route will look similar to:
+
+```text
+https://innovation-portfolio-studio-sap17.cfapps.us10-001.hana.ondemand.com
+```
+
+or, depending on your region:
+
+```text
+https://innovation-portfolio-studio-sap17.cfapps.eu10.hana.ondemand.com
+```
+
+Open that URL in a browser and choose **Innovation Portfolio Studio** from the CAP welcome page.
+
+### 4. Keep the link stable
+
+The link stays stable as long as:
+
+- the SAP BTP subaccount/space remains active
+- the Cloud Foundry app is not deleted
+- the route is not deleted or changed
+- the app name in `manifest.yml` stays the same
+
+If the route name is already taken, change only the `name` in `manifest.yml`, for example:
+
+```yaml
+applications:
+  - name: innovation-portfolio-studio-yourname
+```
+
+Then deploy again with:
+
+```bash
+cf push
+```
+
 ## Development commands
 
 ```bash
