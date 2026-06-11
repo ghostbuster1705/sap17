@@ -12,8 +12,17 @@
         margin: 0;
       }
 
-      .sapUiComponentContainer {
+      #content > .sapUiComponentContainer,
+      #content .sapUiComponentContainer,
+      #content .sapUiComponentContainer > div,
+      #content .sapUiView,
+      #content .sapMNav,
+      #content .sapMNavItem {
         height: 100%;
+      }
+
+      #content .sapFDynamicPage {
+        min-height: 100vh;
       }
     </style>
     <script
