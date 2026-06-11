@@ -111,6 +111,8 @@ For a professional portfolio, combine a live demo link with the GitHub repositor
 This repository contains a simple `manifest.yml` for a portfolio demo deployment with `cf push`.
 
 > Note: this demo uses SQLite and recreates demo data on app start. That is fine for a portfolio showcase. For production, replace SQLite with SAP HANA Cloud.
+>
+> The demo also uses CAP `auth.kind = dummy`, so employers can open the public URL without an SAP login. For a real enterprise deployment, replace this with XSUAA/IAS authentication.
 
 ### 1. Login to Cloud Foundry
 
@@ -187,6 +189,8 @@ This project uses `scripts/cf-start.js` as the Cloud Foundry start command. The 
 - the CAP server port
 
 If you changed the app name in `manifest.yml`, use that name in the `cf logs` command.
+
+If logs mention `Cannot find '@sap/xssec'`, pull the latest branch and redeploy. The demo is configured with `CDS_REQUIRES_AUTH_KIND=dummy` in `manifest.yml` to avoid JWT authentication for the public portfolio URL.
 
 ### 4. Keep the link stable
 

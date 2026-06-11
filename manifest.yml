@@ -8,3 +8,4 @@ applications:
     env:
       NODE_ENV: production
       CDS_ENV: production
+      CDS_REQUIRES_AUTH_KIND: dummy
