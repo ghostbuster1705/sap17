@@ -1,0 +1,11 @@
+node_modules/
+gen/
+resources/
+mta_archives/
+db.sqlite
+db.sqlite-*
+*.db
+*.log
+.env
+.git/
+.github/

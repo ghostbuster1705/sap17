@@ -172,6 +172,22 @@ https://innovation-portfolio-studio-sap17.cfapps.eu10.hana.ondemand.com
 
 Open that URL in a browser and choose **Innovation Portfolio Studio** from the CAP welcome page.
 
+### Troubleshooting a crashed app
+
+If `cf push` ends with `Start unsuccessful`, check the app logs:
+
+```bash
+cf logs innovation-portfolio-studio-sap17 --recent
+```
+
+This project uses `scripts/cf-start.js` as the Cloud Foundry start command. The script logs:
+
+- the SQLite file used by the app
+- the CAP demo data deployment step
+- the CAP server port
+
+If you changed the app name in `manifest.yml`, use that name in the `cf logs` command.
+
 ### 4. Keep the link stable
 
 The link stays stable as long as:

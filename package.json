@@ -7,7 +7,7 @@
     "start": "cds-serve",
     "watch": "cds watch",
     "deploy:sqlite": "cds deploy --to sqlite",
-    "cf:start": "npm run deploy:sqlite && npm start",
+    "cf:start": "node scripts/cf-start.js",
     "build": "cds build",
     "compile": "cds compile srv --to edmx",
     "test": "npm run compile"
@@ -23,6 +23,9 @@
     "odata-v4",
     "portfolio"
   ],
+  "engines": {
+    "node": "22.x"
+  },
   "author": "",
   "license": "MIT",
   "bugs": {
