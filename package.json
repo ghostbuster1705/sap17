@@ -32,8 +32,8 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "@sap/cds-dk": "^9.9.2",
-    "sqlite3": "^6.0.1"
+    "@cap-js/sqlite": "^2.4.0",
+    "@sap/cds-dk": "^9.9.2"
   },
   "cds": {
     "requires": {

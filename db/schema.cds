@@ -2,8 +2,7 @@ namespace innovation.portfolio;
 
 using {
   cuid,
-  managed,
-  Currency
+  managed
 } from '@sap/cds/common';
 
 entity Statuses {
@@ -62,7 +61,7 @@ entity PortfolioItems : cuid, managed {
   targetDate           : Date;
   budget               : Decimal(15, 2) @Measures.ISOCurrency: currency;
   expectedValue        : Decimal(15, 2) @Measures.ISOCurrency: currency;
-  currency             : Currency;
+  currency             : String(3);
   progress             : Integer @assert.range: [0, 100];
   impactScore          : Integer @assert.range: [0, 100];
   aiReadinessScore     : Integer @assert.range: [0, 100];
