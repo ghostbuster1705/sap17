@@ -7,14 +7,14 @@ using {
 
 entity Statuses {
   key code    : String(20);
-      name    : localized String(60);
+      name    : String(60);
       order   : Integer;
       criticality : Integer;
 }
 
 entity Priorities {
   key code    : String(20);
-      name    : localized String(60);
+      name    : String(60);
       order   : Integer;
       criticality : Integer;
 }
@@ -39,7 +39,7 @@ entity Consultants : cuid, managed {
 
 entity Skills {
   key code    : String(30);
-      name    : localized String(80);
+      name    : String(80);
       category : String(60);
 }
 
