@@ -1,0 +1,51 @@
+{
+  "name": "innovation-portfolio-studio",
+  "version": "1.0.0",
+  "description": "SAP CAP and Fiori Elements portfolio app for managing innovation initiatives.",
+  "private": true,
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "build": "cds build",
+    "compile": "cds compile srv --to edmx",
+    "test": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostbuster1705/sap17.git"
+  },
+  "keywords": [
+    "sap",
+    "cap",
+    "fiori-elements",
+    "odata-v4",
+    "portfolio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghostbuster1705/sap17/issues"
+  },
+  "homepage": "https://github.com/ghostbuster1705/sap17#readme",
+  "dependencies": {
+    "@sap/cds": "^9.9.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^9.9.2",
+    "sqlite3": "^6.0.1"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      }
+    },
+    "fiori": {
+      "preview": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+ID;portfolioItem_ID;title;dueDate;owner_ID;status_code;progress;deliverable
+10000000-0000-0000-0000-000000000001;00000000-0000-0000-0000-000000000001;Discovery playback;2026-02-14;aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa;DONE;100;Validated business case and persona map
+10000000-0000-0000-0000-000000000002;00000000-0000-0000-0000-000000000001;AI score prototype;2026-05-30;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb;DELIVER;70;Fiori Elements prototype with score explanation facet
+10000000-0000-0000-0000-000000000003;00000000-0000-0000-0000-000000000001;Workflow integration;2026-07-10;dddddddd-dddd-dddd-dddd-dddddddddddd;VALIDATE;35;Workflow handover proof of concept
+10000000-0000-0000-0000-000000000004;00000000-0000-0000-0000-000000000002;Planner interviews;2026-03-18;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb;DONE;100;Interview notes and exception taxonomy
+10000000-0000-0000-0000-000000000005;00000000-0000-0000-0000-000000000002;Mock integration API;2026-06-12;dddddddd-dddd-dddd-dddd-dddddddddddd;VALIDATE;45;Mock SAP Integration Suite endpoints
+10000000-0000-0000-0000-000000000006;00000000-0000-0000-0000-000000000003;Privacy assessment;2026-05-20;cccccccc-cccc-cccc-cccc-cccccccccccc;AT_RISK;25;Approved demo data policy
+10000000-0000-0000-0000-000000000007;00000000-0000-0000-0000-000000000003;Journey object page;2026-07-15;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb;DISCOVER;15;Object page with SLA and request history facets
+10000000-0000-0000-0000-000000000008;00000000-0000-0000-0000-000000000004;Reporting taxonomy;2026-05-05;cccccccc-cccc-cccc-cccc-cccccccccccc;DISCOVER;20;Sustainability KPI taxonomy and reporting glossary
+10000000-0000-0000-0000-000000000009;00000000-0000-0000-0000-000000000004;Data source map;2026-06-01;dddddddd-dddd-dddd-dddd-dddddddddddd;DISCOVER;10;Source-system ownership map

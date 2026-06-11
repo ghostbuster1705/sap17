@@ -1,0 +1,5 @@
+code;name;order;criticality
+EXEC;Executive Focus;40;1
+HIGH;High;30;2
+MEDIUM;Medium;20;3
+LOW;Low;10;0

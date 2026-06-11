@@ -1,0 +1,7 @@
+code;name;order;criticality
+DISCOVER;Discovery;10;2
+VALIDATE;Validating;20;2
+DELIVER;In Delivery;30;3
+AT_RISK;At Risk;40;1
+DONE;Completed;50;3
+BLOCKED;Blocked;60;1

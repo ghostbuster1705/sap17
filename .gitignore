@@ -1,0 +1,9 @@
+node_modules/
+gen/
+resources/
+mta_archives/
+db.sqlite
+*.db
+*.log
+.env
+.DS_Store

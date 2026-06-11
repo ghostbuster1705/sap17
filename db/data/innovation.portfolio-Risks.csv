@@ -1,0 +1,5 @@
+ID;portfolioItem_ID;title;description;owner_ID;probability;impact;mitigation;status_code
+20000000-0000-0000-0000-000000000001;00000000-0000-0000-0000-000000000001;Model explainability gap;Stakeholders may reject AI recommendations if explanations are too generic.;aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa;3;5;Add explanation facet with top factors and confidence bands.;VALIDATE
+20000000-0000-0000-0000-000000000002;00000000-0000-0000-0000-000000000002;Inventory API variance;Regional inventory APIs have inconsistent response fields.;dddddddd-dddd-dddd-dddd-dddddddddddd;4;4;Introduce canonical CAP service contract and mock adapters.;AT_RISK
+20000000-0000-0000-0000-000000000003;00000000-0000-0000-0000-000000000003;Privacy review delay;Demo data approval may block stakeholder playback.;cccccccc-cccc-cccc-cccc-cccccccccccc;4;5;Use anonymized sample data and document processing boundaries.;AT_RISK
+20000000-0000-0000-0000-000000000004;00000000-0000-0000-0000-000000000004;Sustainability taxonomy mismatch;Different teams may use conflicting emissions categories.;cccccccc-cccc-cccc-cccc-cccccccccccc;3;4;Run taxonomy workshop before implementing reporting filters.;DISCOVER

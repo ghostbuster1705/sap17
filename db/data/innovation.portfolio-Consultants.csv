@@ -1,0 +1,5 @@
+ID;firstName;lastName;role;location;email;availability
+aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa;Maya;Novak;SAP Solution Architect;Prague;maya.novak@example.com;72
+bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb;Leo;Schneider;Fiori Elements Developer;Walldorf;leo.schneider@example.com;64
+cccccccc-cccc-cccc-cccc-cccccccccccc;Sofia;Ivanova;Process Mining Consultant;Sofia;sofia.ivanova@example.com;55
+dddddddd-dddd-dddd-dddd-dddddddddddd;Noah;Berg;Integration Lead;Copenhagen;noah.berg@example.com;81
